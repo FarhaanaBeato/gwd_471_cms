@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+*{
+	margin:0px;
+	padding:0px;
+}
+
+/* -------GENERAL SELECTORS------- */
+body{
+	
+}
+
+h1, h2, h3, h4, h5, h6, a, p{
+	
+}
+
+h1{
+	
+}
+
+h2{
+	
+}
+
+h3{
+	
+}
+
+h4{
+	
+}
+
+a:link, a:visited, a:active{
+	
+}
+
+a:hover{
+	
+}
+
+p{
+	
+}
+/* -------GENERAL SELECTORS------- */
+
+/* -------FONT STYLING------- */
+@font-face{
+	src:URL(''),
+		URL(''),
+		URL(''),
+		URL('');
+	font-family:'';
+}
+/* -------FONT STYLING------- */
+
+/* -------WRAP-------*/
+#wrap{
+	
+}
+/* -------WRAP-------*/
+
+/* -------HEADER------- */
+#header{
+	
+}
+/* -------HEADER------- */
+
+/* -------NAV------- */
+#nav{
+	
+}
+/* -------NAV------- */
+
+/* -------MAIN CONTENT------- */
+#main-content{
+	
+}
+/* -------MAIN CONTENT------- */
+
+/* -------FOOTER------- */
+#footer{
+	
+}
+/* -------FOOTER------- */
