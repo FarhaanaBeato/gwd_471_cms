@@ -59,12 +59,14 @@ p{
 #wrapper{
 	width:960px;
 	margin:auto;
+	padding:20px;
 }
 /* -------WRAP-------*/
 
 /* -------HEADER------- */
 #header{
-	
+	width:940px;
+	padding:10px;
 }
 /* -------HEADER------- */
 
