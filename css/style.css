@@ -56,8 +56,9 @@ p{
 /* -------FONT STYLING------- */
 
 /* -------WRAP-------*/
-#wrap{
-	
+#wrapper{
+	width:960px;
+	margin:auto;
 }
 /* -------WRAP-------*/
 
@@ -70,6 +71,15 @@ p{
 /* -------NAV------- */
 #nav{
 	
+}
+
+#nav ul{
+	
+}
+
+#nav ul li{
+	display:inline-block;
+	width:100px;
 }
 /* -------NAV------- */
 
