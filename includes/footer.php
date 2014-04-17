@@ -1,5 +1,11 @@
 <!-- START FOOTER -->
 <div id="footer">
-  <p>&copy; 2014 Beato Designs All Rights Reserved</p>
+  <ul>
+    <li><a href="">Sitemap</a></li>
+    <li><a href="">Accessibility</a></li>
+    <li><a href="">Statement</a></li>
+    <li><a href="">Email</a></li>
+    <li><a href="">WebMaster</a></li>
+  </ul>
 </div>
 <!-- END FOOTER -->

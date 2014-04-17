@@ -128,16 +128,60 @@ p{
 /* -------SIDE BAR------- */
 
 /* -------MAIN CONTENT------- */
-#main-content{
+#home #main-content{
 	width:670px;
   margin-left:5px;
 }
+
+#about #main-content{
+  width:920px;
+  margin-left:0;
+}
+
+#contact #main-content{
+  width:920px;
+  margin-left:0;
+}
+
+form{
+  width:500px;
+}
+
+input,label {
+	display:block;
+}
+
+label {
+	margin-bottom: 0;
+}
 /* -------MAIN CONTENT------- */
+
+/* -------COLUMNS------- */
+#column-1, #column-2, #column-3{
+  width:280px;
+  float:left;
+  margin:10px;
+}
+
+#column-1 img, #column-2 img, #column-3 img{
+  width:280px;
+  height:280px;
+}
+/* -------COLUMNS------- */
 
 /* -------FOOTER------- */
 #footer{
 	text-align:center;
   border-top:1px solid #000;
   width:920px;
+}
+
+#footer ul li{
+  display:inline-block;
+  width:100px;
+}
+
+#footer ul li a{
+  
 }
 /* -------FOOTER------- */
