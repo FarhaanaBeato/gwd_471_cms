@@ -55,6 +55,14 @@ p{
 }
 /* -------FONT STYLING------- */
 
+#wrapper, #header, #nav, #main-content, #footer{
+  background:rgba(50,50,50,0.5);
+}
+
+#header, #nav, #main-content, #footer{
+  padding:10px;
+}
+
 /* -------WRAP-------*/
 #wrapper{
 	width:960px;
@@ -66,13 +74,13 @@ p{
 /* -------HEADER------- */
 #header{
 	width:940px;
-	padding:10px;
+  text-align:center;
 }
 /* -------HEADER------- */
 
 /* -------NAV------- */
 #nav{
-	
+	text-align:center;
 }
 
 #nav ul{
@@ -80,8 +88,21 @@ p{
 }
 
 #nav ul li{
-	display:inline-block;
-	width:100px;
+  /*display:inline-block;
+  width:100px;
+  background:#FFF;*/
+}
+
+#wrapper #nav ul li a{
+  text-decoration:none;
+  display:inline-block;
+  width:100px;
+  background:#FFF;
+  /*background:#FFF;*/
+}
+
+#wrapper #nav ul li a:hover{
+  background:#F0C;
 }
 /* -------NAV------- */
 
@@ -93,6 +114,7 @@ p{
 
 /* -------FOOTER------- */
 #footer{
-	
+	text-align:center;
+  border-top:1px solid #000;
 }
 /* -------FOOTER------- */
