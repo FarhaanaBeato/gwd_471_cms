@@ -155,7 +155,7 @@ form{
   margin:auto;
 }
 
-input, label, textarea{
+input, textarea{
 	display:block;
   width:400px;
   margin:20px 0px 20px 0px;
@@ -169,9 +169,6 @@ input, label, textarea{
   text-align:center;
 }
 
-label {
-	margin-bottom: 0;
-}
 /* -------FORM------- */
 
 /* -------MAIN CONTENT------- */
