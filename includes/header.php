@@ -1,5 +1,5 @@
 <!-- START HEADER -->
 <div id="header">
-	<h1>Spacely Sprockets&trade;: Descriptive information</h1>
+	<h1>Beato Designs&trade;</h1>
 </div>
 <!-- END HEADER -->

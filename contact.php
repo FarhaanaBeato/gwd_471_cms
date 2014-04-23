@@ -10,23 +10,13 @@
   <!-- START MAIN CONTENT -->
   <div id="main-content">
     <h2>Contact Us</h2>
-    <h3>Contact Form</h3>
     
-    <form action="" method="post">
-      <fieldset>
-      <legend>Contact Form</legend>
-           
-      <label for="user">Username</label>
-      <input name="user" type="text" value="" />
-             
-      <label for="email">Email</label>
-      <input name="email" type="text" value="" />
-            
-      <label for="message">Message</label>
-      <textarea name="message" rows="8"></textarea>
-            
-      <input name="submitted" type="submit" value="Sign Up Now!" />
-      </fieldset>
+    <form action="" class="php-form">
+      <input type="text" name="name" class="form-input" placeholder="Name (required)" required />
+      <input type="email" name="email" class="form-input" placeholder="Email (required)" required />
+      <input type="text" name="subject" class="form-input" placeholder="Subject (optional)" />
+      <textarea name="message" class="form-input"  placeholder="Message (required)" required></textarea>
+      <input class="form-btn" type="submit" value="Send Message" />
     </form>
   </div>
   <!-- END MAIN CONTENT -->

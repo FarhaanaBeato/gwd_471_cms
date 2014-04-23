@@ -9,7 +9,7 @@
 
 /* -------GENERAL SELECTORS------- */
 body{
-	
+	font-family:'Century Gothic';
 }
 
 h1, h2, h3, h4, h5, h6, a, p{
@@ -17,11 +17,12 @@ h1, h2, h3, h4, h5, h6, a, p{
 }
 
 h1{
-	
+	text-align:center;
 }
 
 h2{
-	
+	margin:10px 0px 10px 0px;
+  text-align:center;
 }
 
 h3{
@@ -34,10 +35,11 @@ h4{
 
 a:link, a:visited, a:active{
 	text-decoration:none;
+  color:#333;
 }
 
 a:hover{
-	
+	color:#666;
 }
 
 p{
@@ -56,7 +58,7 @@ p{
 /* -------FONT STYLING------- */
 
 #wrapper, #header, #nav, #side-bar, #main-content, #footer{
-  background:rgba(50,50,50,0.5);
+  /*background:rgba(50,50,50,0.5);*/
 }
 
 #header, #nav, #side-bar, #main-content, #footer{
@@ -76,6 +78,7 @@ p{
 #header{
 	width:920px;
   text-align:center;
+  background:rgba(191,188,197, 0.5);
 }
 /* -------HEADER------- */
 
@@ -91,31 +94,33 @@ p{
 
 #nav ul li{
   display:inline-block;
-  width:100px;
-  background:#FFF;
+  /*width:100px;*/
 }
 
-#wrapper #nav ul li a{
+#wrapper #nav ul li a:link, #wrapper #nav ul li a:visited, #wrapper #nav ul li a:active{
   display:inline-block;
   width:100px;
-  background:#FFF;
-  /*background:#FFF;*/
+  background:rgba(99,122,54,0.7);
+  padding:5px;
+  margin:5px 0px 5px 0px;
+  color:white;
 }
 
 #wrapper #nav ul li a:hover{
-  background:#F0C;
+  background:rgba(99,122,54,1);
 }
 
-#home .home-status, #about .about-status, #contact .contact-status{
-  font-weight:bold;
+#home #wrapper .home-status, #about #wrapper .about-status, #contact #wrapper .contact-status{
+  border-bottom:1px solid #90a070;
 }
 /* -------NAV------- */
 
 /* -------SIDE BAR------- */
 #side-bar{
   width:200px;
-  margin-right:5px;
+  margin-left:5px;
   text-align:center;
+  background:rgba(191,188,197, 0.5);
 }
 
 #side-bar ul li{
@@ -129,8 +134,9 @@ p{
 
 /* -------MAIN CONTENT------- */
 #home #main-content{
-	width:670px;
-  margin-left:5px;
+	width:669px;
+  margin-right:5px;
+  border-right:1px solid #CCC;
 }
 
 #about #main-content{
@@ -143,18 +149,57 @@ p{
   margin-left:0;
 }
 
+/* -------FORM------- */
 form{
-  width:500px;
+  width:400px;
+  margin:auto;
 }
 
-input,label {
+input, label, textarea{
 	display:block;
+  width:400px;
+  margin:20px 0px 20px 0px;
+  border-radius:10px;
+  border:1px solid #DDD;
+  padding:10px;
+}
+
+.form-btn{
+  width:150px;
+  text-align:center;
 }
 
 label {
 	margin-bottom: 0;
 }
+/* -------FORM------- */
+
 /* -------MAIN CONTENT------- */
+
+/* -------CLASSES------- */
+.button{
+  border:3px solid #333;
+  padding:5px;
+  display:inline-block;
+  margin:5px 0px 5px 0px;
+  width:100px;
+  text-align:center;
+  color:#333;
+}
+
+.button:hover{
+  border-color:#666;
+	color:#666;
+}
+
+
+#placeholder{
+  height:300px;
+  margin:auto;
+  display:block;
+}
+
+/* -------CLASSES------- */
 
 /* -------COLUMNS------- */
 #column-1, #column-2, #column-3{
@@ -166,6 +211,11 @@ label {
 #column-1 img, #column-2 img, #column-3 img{
   width:280px;
   height:280px;
+  background:#CCC;
+}
+
+#column-1 h3, #column-2 h3, #column-3 h3{
+  margin:5px 0px 10px 0px;
 }
 /* -------COLUMNS------- */
 
