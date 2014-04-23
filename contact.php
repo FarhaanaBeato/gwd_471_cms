@@ -1,5 +1,14 @@
 <?php
-	//IMPORTANT - SET EMAIL INFO HERE
+    if($_POST['submit'])
+    {
+      echo 'Form has been submitted!';
+    }
+    else
+    {
+      echo 'View Form';
+    }
+
+    //IMPORTANT - SET EMAIL INFO HERE
     define('DESTINATION_EMAIL' , 'Farhaana_Beato@aol.com');
     define('MESSAGE_SUBJECT' , 'GWD 471 CMS');
     define('REPLY_TO' , 'Farhaana_Beato@aol.com');
@@ -22,22 +31,24 @@
 <div id="main-content">
   <h2>Contact Us</h2>
     
-  <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="php-form">
-    <label for="name"></label><?php echo @$name_error; ?>
-    <input type="text" name="name" class="form-input" placeholder="Name (required)" required />
-        
-    <label for="email"></label><?php echo @$email_error; ?>
-    <input type="email" name="email" class="form-input" placeholder="Email (required)" required />
-        
-    <label for="subject"></label>
-    <input type="text" name="subject" class="form-input" placeholder="Subject (optional)" />
-        
-    <label for="message"></label><?php echo @$message_error; ?>
-    <textarea name="message" class="form-input"  placeholder="Message (required)" required></textarea>
-        
-        
-    <input class="form-btn" type="submit" value="Send Message" />
+  <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" id="">
+    <fieldset>
+      <label for="name"></label><?php echo @$name_error; ?>
+      <input type="text" name="name" placeholder="Name (required)" required />
+          
+      <label for="email"></label><?php echo @$email_error; ?>
+      <input type="email" name="email" placeholder="Email (required)" required />
+          
+      <label for="subject"></label>
+      <input type="text" name="subject" placeholder="Subject (optional)" />
+          
+      <label for="message"></label><?php echo @$message_error; ?>
+      <textarea name="message"  placeholder="Message (required)" required></textarea>
+          
+      <input type="submit" name="submit" value="Send Message" />
+    </fieldset>
   </form>
+  
 </div>
 <!-- END MAIN CONTENT -->
     
