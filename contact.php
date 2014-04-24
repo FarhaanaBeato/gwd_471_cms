@@ -1,21 +1,51 @@
 <?php
+
     if($_POST['submit'])
     {
-      echo 'Form has been submitted!';
+      require_once('validation.php');
+      
+      $name = $_POST['name'];
+      $email = $_POST['email'];
+      $message = $_POST['message'];
+      $errors = array();
+      
+      //TEST USER INFO OR NON-VALID DATA
+      $valid = verifyAlphaNum($name);
+      if(!$valid)
+      {
+        $errors[] = 'Name must be letters, numbers, or spaces';
+      }
+      
+      $valid = verifyEmail($email);
+      if(!$valid)
+      {
+        $errors[] = 'Please provide valid email address i.e. name@site.com';
+      }
+      
+      $valid = verifyText($message);
+      if(!$valid)
+      {
+        $errors[] = 'Please retype your message';
+      }
+      
+      if(!$errors)
+      {
+        echo 'PREPARE AND SEND EMAIL';
+      }
+      
+      print_r($errors);
     }
     else
     {
-      echo 'View Form';
+      //echo 'View Form';
     }
 
     //IMPORTANT - SET EMAIL INFO HERE
-    define('DESTINATION_EMAIL' , 'Farhaana_Beato@aol.com');
+/*define('DESTINATION_EMAIL' , 'Farhaana_Beato@aol.com');
     define('MESSAGE_SUBJECT' , 'GWD 471 CMS');
     define('REPLY_TO' , 'Farhaana_Beato@aol.com');
     define('FROM_ADDRESS' , 'Farhaana_Beato@aol.com');
-    define('REDIRECT_URL' , 'http://farhaanabeato.com/courses/gwd_471/gwd_471_cms/index.php');
-    
-    require_once('validation.php');
+    define('REDIRECT_URL' , 'http://farhaanabeato.com/courses/gwd_471/gwd_471_cms/index.php');*/
 ?>
 
 <?php $page_id = "contact";?>
