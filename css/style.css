@@ -39,7 +39,7 @@ a:link, a:visited, a:active{
 }
 
 a:hover{
-	color:#666;
+	color:rgba(99,122,54,1);
 }
 
 p{
@@ -110,7 +110,7 @@ p{
   background:rgba(99,122,54,1);
 }
 
-#home #wrapper .home-status, #about #wrapper .about-status, #contact #wrapper .contact-status{
+#home #wrapper .home-status, #products #wrapper .products-status, #contact #wrapper .contact-status{
   border-bottom:1px solid #90a070;
 }
 /* -------NAV------- */
@@ -139,7 +139,7 @@ p{
   border-right:1px solid #CCC;
 }
 
-#about #main-content{
+#products #main-content{
   width:920px;
   margin-left:0;
 }
@@ -171,6 +171,15 @@ input, textarea{
 .form-btn{
   width:150px;
   text-align:center;
+}
+
+.error{
+  /*background:red;
+  padding:5px;
+  border:1px solid white;
+  border-radius:7px;*/
+  color:red;
+  font-size:10px;
 }
 
 /* -------FORM------- */

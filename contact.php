@@ -4,22 +4,22 @@
     {
       require_once('validation.php');
       
-      $name = $_POST['name'];
-      $email = $_POST['email'];
-      $message = $_POST['message'];
+      $name = trim($_POST['name']);
+      $email = trim($_POST['email']);
+      $message = trim($_POST['message']);
       $errors = array();
       
       //TEST USER INFO OR NON-VALID DATA
       $valid = verifyAlphaNum($name);
       if(!$valid)
       {
-        $errors[] = 'Name must be letters, numbers, or spaces';
+        $errors['name'] = 'Name must be letters, numbers, or spaces';
       }
       
       $valid = verifyEmail($email);
       if(!$valid)
       {
-        $errors[] = 'Please provide valid email address i.e. name@site.com';
+        $errors['email'] = 'Please provide valid email address i.e. name@site.com';
       }
       
       $valid = verifyText($message);
@@ -32,8 +32,6 @@
       {
         echo 'PREPARE AND SEND EMAIL';
       }
-      
-      print_r($errors);
       
       
       $message = verifyText($message);
@@ -89,16 +87,18 @@
   <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" id="">
     <fieldset>
       <label for="name"></label><?php echo @$name_error; ?>
-      <input type="text" name="name" placeholder="Name (required)" required />
+      <span class="error"><?php echo @$errors['name']; ?></span>
+      <input type="text" name="name" placeholder="Name (required)" value="<?php echo @$_POST['name']; ?>" />
           
       <label for="email"></label><?php echo @$email_error; ?>
-      <input type="email" name="email" placeholder="Email (required)" required />
+      <span class="error"><?php echo @$errors['email']; ?></span>
+      <input type="email" name="email" placeholder="Email (required)" value="<?php echo @$_POST['email']; ?>" />
           
       <label for="subject"></label>
       <input type="text" name="subject" placeholder="Subject (optional)" />
           
       <label for="message"></label><?php echo @$message_error; ?>
-      <textarea name="message"  placeholder="Message (required)" required></textarea>
+      <textarea name="message"  placeholder="Message (required)" ><?php echo @$_POST['message']; ?></textarea>
           
       <input type="submit" name="submit" value="Send Message" class="form-btn" />
     </fieldset>
