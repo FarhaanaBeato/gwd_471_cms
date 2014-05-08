@@ -108,6 +108,3 @@
 <!-- END MAIN CONTENT -->
     
 <?php require_once('includes/footer.php');?>
-
-</div>
-<!-- END WRAPPER -->

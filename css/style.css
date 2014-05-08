@@ -144,6 +144,23 @@ p{
   margin-left:0;
 }
 
+#products #all-products{
+  /*background:rgba(0,0,0,0.5);*/
+}
+
+#products .single-product{
+  /*border:1px solid black;*/
+  width:300px;
+  margin:auto;
+  text-align:center;
+  display:inline-block;
+}
+
+#products .single-product img{
+  width:200px;
+  height:200px;
+}
+
 #contact #main-content{
   width:920px;
   margin-left:0;
@@ -210,24 +227,6 @@ input, textarea{
 }
 
 /* -------CLASSES------- */
-
-/* -------COLUMNS------- */
-#column-1, #column-2, #column-3{
-  width:280px;
-  float:left;
-  margin:10px;
-}
-
-#column-1 img, #column-2 img, #column-3 img{
-  width:280px;
-  height:280px;
-  background:#CCC;
-}
-
-#column-1 h3, #column-2 h3, #column-3 h3{
-  margin:5px 0px 10px 0px;
-}
-/* -------COLUMNS------- */
 
 /* -------FOOTER------- */
 #footer{

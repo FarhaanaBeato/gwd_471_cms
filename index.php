@@ -19,9 +19,3 @@
     
   <?php require_once('includes/side-bar.php');?>
   <?php require_once('includes/footer.php');?>
-  
-  </div>
-  <!-- END WRAPPER -->
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="js/init.js"></script>
