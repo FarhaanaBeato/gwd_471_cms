@@ -41,7 +41,7 @@
       {
         //prepare for sending email
         $destination = 'Farhaana_Beato@aol.com';
-        $subject = 'Comments from my website';
+        $subject = 'Comments from GWD 471';
         $body = "$name \n $email \n $message";
         
         if(mail($destination, $subject, $body))
@@ -71,18 +71,42 @@
     }
 ?>
 
+<?php require_once('../../config.php');?>
 <?php $page_id = "contact";?>
-<?php require_once('top.php');?>
+<?php $title = "Contact";?>
 
-<!-- START WRAPPER -->
-<div id="wrapper">
-    
-    <?php require_once('includes/header.php');?>
-    <?php require_once('includes/nav.php');?>
+<?php
+
+//GET ALL CONTENT RELATED TO THE SELECTED PAGE
+$sql = "
+SELECT *
+FROM site_content
+WHERE page_name = 'contact' ";
+
+$myData = $db->query($sql);
+
+//CREATE CONTAINER FOR EACH PIECE OF DATA
+while($row = $myData->fetch_assoc())
+  {
+  if($row['section_name'] === 'blurb')
+    {
+    $blurb = $row['content'];
+  }
+  if($row['section_name'] === 'intro')
+    {
+    $intro = $row['content'];
+  }
+}
+
+?>
+
+<?php require_once('includes/top.php');?>   
+<?php require_once('includes/header.php');?>
+<?php require_once('includes/nav.php');?>
     
 <!-- START MAIN CONTENT -->
 <div id="main-content">
-  <h2>Contact Us</h2>
+  <h1><?php echo $intro; ?></h1>
     
   <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" id="">
     <fieldset>
@@ -106,5 +130,6 @@
   
 </div>
 <!-- END MAIN CONTENT -->
-    
+
+<?php require_once('includes/side-bar.php');?>
 <?php require_once('includes/footer.php');?>

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
-
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300);
 
 *{
 	margin:0px;
@@ -9,7 +9,7 @@
 
 /* -------GENERAL SELECTORS------- */
 body{
-	font-family:'Century Gothic';
+	font-family:'Raleway', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, a, p{
@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5, h6, a, p{
 
 h1{
 	text-align:center;
+  margin:15px 0 15px 0;
 }
 
 h2{
@@ -40,6 +41,10 @@ a:link, a:visited, a:active{
 
 a:hover{
 	color:rgba(99,122,54,1);
+  -webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	transition:all 0.3s ease;
 }
 
 p{
@@ -61,7 +66,7 @@ p{
   /*background:rgba(50,50,50,0.5);*/
 }
 
-#header, #nav, #side-bar, #main-content, #footer{
+#nav, #side-bar, #main-content, #footer{
   padding:20px;
   margin:5px 0px 5px 0px;
   float:left;
@@ -70,13 +75,16 @@ p{
 /* -------WRAP-------*/
 #wrapper{
 	width:960px;
-	margin:auto;
+	margin:10px auto 10px auto;
 }
 /* -------WRAP-------*/
 
 /* -------HEADER------- */
 #header{
-	width:920px;
+  float:left;
+  margin:5px 0 5px 0;
+	width:960px;
+  height:230px;
   text-align:center;
   background:rgba(191,188,197, 0.5);
 }
@@ -133,19 +141,8 @@ p{
 /* -------SIDE BAR------- */
 
 /* -------MAIN CONTENT------- */
-#home #main-content{
-	width:669px;
-  margin-right:5px;
-  border-right:1px solid #CCC;
-}
-
-#products #main-content{
+#main-content{
   width:920px;
-  margin-left:0;
-}
-
-#products #all-products{
-  /*background:rgba(0,0,0,0.5);*/
 }
 
 #products .single-product{
@@ -159,11 +156,6 @@ p{
 #products .single-product img{
   width:200px;
   height:200px;
-}
-
-#contact #main-content{
-  width:920px;
-  margin-left:0;
 }
 
 /* -------FORM------- */
@@ -215,8 +207,8 @@ input, textarea{
 }
 
 .button:hover{
-  border-color:#666;
-	color:#666;
+  border-color:rgba(99,122,54,1);
+	color:rgba(99,122,54,1);
 }
 
 

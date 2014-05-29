@@ -1,12 +1,11 @@
+
 <!-- START FOOTER -->
 <div id="footer">
   <ul>
-    <li><a href="">Sitemap</a></li>
-    <li><a href="">Accessibility</a></li>
-    <li><a href="">Statement</a></li>
-    <li><a href="">Email</a></li>
-    <li><a href="">WebMaster</a></li>
-  </ul>
+      <li><a href="index.php">Home</a></li>
+      <li><a href="products.php">Products</a></li>
+      <li><a href="contact.php">Contact</a></li>
+    </ul>
 </div>
 <!-- END FOOTER -->
 

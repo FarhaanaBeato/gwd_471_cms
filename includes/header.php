@@ -1,5 +1,6 @@
+
 <!-- START HEADER -->
 <div id="header">
-	<h1>Beato Designs&trade;</h1>
+	<img src="images/etsy_banner.png" alt="Header">
 </div>
 <!-- END HEADER -->
