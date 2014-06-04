@@ -50,7 +50,7 @@ while($row = $myData1->fetch_assoc())
   while($row = $myData->fetch_assoc())
   {
     echo '<div class="single-product">';
-    echo '<img src="" alt="" />';
+    echo '<img src="images/products/mickey.jpg" alt="" />';
     echo '<h3>' . $row['name'] . '</h3>';
     echo '<p>$' . $row['price'] . '</p>';
     echo '<p>' . $row['description'] . '</p>';
