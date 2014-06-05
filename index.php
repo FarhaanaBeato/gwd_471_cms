@@ -34,9 +34,13 @@ while($row = $myData->fetch_assoc())
 <!-- START MAIN CONTENT -->
 <div id="main-content">
   <h1><?php echo $intro; ?></h1>
-  <img src="images/frog_1.jpg" alt="Frog 1" id="placeholder">
-  <a class="button" href="images/frog_1.jpg">Frog 1</a>
-  <a class="button" href="images/frog_2.jpg">Frog 2</a>
+  <img src="images/products/mickey.jpg" alt="Mickey Charm" id="placeholder">
+  <a class="button" href="images/products/mickey.jpg">Mickey Charm</a>
+  <a class="button" href="images/products/minnie.jpg">Minnie Charm</a>
+  <a class="button" href="images/products/panda.jpg">Panda Charm</a>
+  <a class="button" href="images/products/pooh.jpg">Winnie the Pooh Charm</a>
+  <a class="button" href="images/products/ginger.jpg">Gingerbread Man Charm</a>
+  <a class="button" href="images/products/jasmine.jpg">Jasmine Charm</a>
   <br><br>
   <p><?php echo $blurb; ?></p>
 </div>

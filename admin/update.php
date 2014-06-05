@@ -86,7 +86,7 @@ while($row = $myData->fetch_assoc())
     <textarea name="intro" rows="10" columns="30"><?php echo $intro;?></textarea>
     
     <label for="body">Body</label>
-    <textarea name="body" rows="10" columns="30"><?php echo $intro;?></textarea>
+    <textarea name="body" rows="10" columns="30"><?php echo $blurb;?></textarea>
     
     <input type="submit" name="submitted" value="Update Now" />
   </fieldset>
